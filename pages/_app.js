@@ -25,8 +25,8 @@ function MyApp({ Component, pageProps }) {
           billingAddressCollection={false}
           successUrl='https://stripe.com'
           cancelUrl='https://twitter.com/dayhaysoos'
-          allowedCountries={['US']}
-          currency='USD'>
+          allowedCountries={['US','UK']}
+          currency='GBP'>
           <Component {...pageProps} />
         </CartProvider>
       </ThemeProvider>

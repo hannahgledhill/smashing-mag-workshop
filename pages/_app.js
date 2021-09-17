@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }) {
           cartMode='checkout-session'
           stripe={process.env.NEXT_PUBLIC_STRIPE_API_KEY}
           billingAddressCollection={false}
-          successUrl='https://stripe.com'
-          cancelUrl='https://twitter.com/dayhaysoos'
+          successUrl='http://localhost:8888/success'
+          cancelUrl='http://localhost:8888/cancel'
           allowedCountries={['US','UK']}
           currency='GBP'>
           <Component {...pageProps} />
@@ -34,4 +34,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default MyApp; 

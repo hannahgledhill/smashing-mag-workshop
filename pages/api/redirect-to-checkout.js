@@ -49,7 +49,7 @@ export default async (req, res) => {
       payment_method_types: ['card'],
       billing_address_collection: 'auto',
       shipping_address_collection: {
-        allowed_countries: ['US', 'CA'],
+        allowed_countries: ['US', 'CA', 'GB'],
       },
       mode: 'payment',
       success_url: `${process.env.SITE_URL}/success`,
